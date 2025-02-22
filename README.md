@@ -26,3 +26,5 @@ Super, Alt, Shift, and Ctrl are one-shot. I thought at first that having one-sho
 See `kanata.kbd`. When playing videogames, I just use QWERTY.
 
 If, like me, typing in Spanish is common for you and you hate dead keys, you'll want to check out `engint.klc`, the MSKLC source file for my keyboard layout under Windows. I adapted it from the English International layout that ships with the operating system, but removed all traces of dead keys. Type apostrophes, quotation marks, and tildes without interruption.
+
+A note: the MSKLC source file is for a regular old QWERTY layout. Kanata is the program responsible for shuffling keys around.
