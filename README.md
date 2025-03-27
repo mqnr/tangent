@@ -33,4 +33,4 @@ Also, do note that at the moment that while the MSKLC layout is eminently usable
 
 ## Linux
 
-See `tangent-qwerty`, an XKB symbols file, for my international QWERTY layout.
+See `tangent-qwerty`, an XKB symbols file, for my international QWERTY layout. Or, better yet, see `tangent-gallium` for Gallium, internationalized in the same manner.
