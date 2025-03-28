@@ -5,11 +5,11 @@
           z    x    c    v    b    n    m    ,    .    /
 )
 
-(deflayer pine-v4
+(deflayer gallium
           _    _    _    _    _    _    _    _    _    _    _    _
-          q    l    c    m    k    '    f    u    o    y
-  @nav    n    r    s    t    w    p    h    e    a    i    /
-          j    x    z    g    v    b    d    ;    ,    .
+          b    l    d    c    v    j    y    o    u    ,
+  @nav    n    r    t    s    g    p    h    a    e    i    /
+          x    q    m    w    z    k    f    '    ;    .
 )
 
 (deflayer navigation

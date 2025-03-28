@@ -1,11 +1,11 @@
 # tangent
 
-My config files regarding my keyboard layout. I use Pine, by ClemenPine:
+My config files regarding my keyboard layout. I use Gallium, by GalileoBlues:
 
 ```
-q l c m k  ' f u o y
-n r s t w  p h e a i /
-j x z g v  b d ; , .
+b l d c v  j y o u ,
+n r t s g  p h a e i /
+x q m w z  k f ' ; .
 ```
 
 I decided not to anglemod it even when using rowstag keyboards because I wanted keys to be in the same place no matter what I was typing on. I found this arrangement acceptable.
