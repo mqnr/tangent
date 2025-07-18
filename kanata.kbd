@@ -1,26 +1,35 @@
 (defsrc
           1    2    3    4    5    6    7    8    9    0    -    =
-          q    w    e    r    t    y    u    i    o    p
+          q    w    e    r    t    y    u    i    o    p    [    ]
   caps    a    s    d    f    g    h    j    k    l    ;    '
           z    x    c    v    b    n    m    ,    .    /
 )
 
 (deflayer gallium
-          _    _    _    _    _    _    _    _    _    _    _    _
-          b    l    d    c    v    j    y    o    u    ,
+          _    _    _    _    _    _    _    _    _    _    _       _
+          b    l    d    c    v    j    y    o    u    ,    _       _
   @nav    n    r    t    s    g    p    h    a    e    i    /
           x    q    m    w    z    k    f    '    ;    .
 )
 
 (deflayer navigation
        f1     f2      f3       f4      f5      f6    f7      f8      f9      f10     f11    f12
-       esc    _       S-tab    tab     volu    _     home    up      end     _
+       esc    _       S-tab    tab     volu    _     home    up      end     prnt    @gal   @qwr
   _    @met   @alt    @sft     @ctl    vold    _     lft     down    rght    bspc    del
        C-z    C-x     C-c      C-v     mute    _     _       _       _       caps
 )
 
+(deflayer qwerty
+          _    _    _    _    _    _    _    _    _    _     _        _
+          _    _    _    _    _    _    _    _    _    _     _        _
+  @nav    _    _    _    _    _    _    _    _    _    _     _
+          _    _    _    _    _    _    _    _    _    _
+)
+
 (defalias
   nav (tap-hold 100 100 esc (layer-while-held navigation))
+  qwr (layer-switch qwerty)
+  gal (layer-switch gallium)
   met (one-shot 2000 lmet)
   alt (one-shot 2000 lalt)
   sft (one-shot 2000 lsft)
