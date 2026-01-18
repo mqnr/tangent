@@ -1,0 +1,45 @@
+;; Kanata configuration for macOS
+;; Navigation layer with one-shot modifiers
+
+(defcfg
+  ;; For macOS
+  process-unmapped-keys yes
+)
+
+(defsrc
+  esc  f1    f2    f3    f4    f5    f6    f7    f8    f9    f10    f11    f12
+  1    2     3     4     5     6     7     8     9     0     -     =
+  q    w     e     r     t     y     u     i     o
+  caps a     s     d     f     g     h     j     k     l     ;     '
+  z    x     c     v     b     n     m     /
+  spc
+)
+
+(deflayer base
+  esc    🔅   🔆    ✗    ✗    ✗    ✗    ◀◀   ▶⏸   ▶▶   🔇   🔉   🔊
+  _      _    _    _    _    _    _    _    _    _    _    _
+  _      _    _    _    _    _    _    _    _
+  @nav   _    _    _    _    _    _    _    _    _    _    _
+  _      _    _    _    _    _    _    _
+  _
+)
+
+(deflayer navigation
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  M-`  _    S-tab tab volu _    home up   end
+  _    @sft @ctl @opt @cmd vold _    lft  down rght bspc del
+  M-b  M-z  M-r  M-t  mute _    _    caps
+  M-spc
+)
+
+(defalias
+  ;; Caps lock: tap for Escape, hold for navigation layer
+  nav (tap-hold-press 100 200 esc (layer-while-held navigation))
+
+  ;; One-shot modifiers (2000ms timeout)
+  sft (one-shot 60000 lsft)
+  ctl (one-shot 60000 lctl)
+  opt (one-shot 60000 lalt)
+  cmd (one-shot 60000 lmet)
+)
