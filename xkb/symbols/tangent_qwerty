@@ -1,7 +1,7 @@
 // Tangent QWERTY - English International keyboard layout
 
 default partial alphanumeric_keys
-xkb_symbols "tangent-qwerty" {
+xkb_symbols "tangent_qwerty" {
     name[Group1] = "English (Tangent QWERTY)";
 
     key <TLDE> { [ grave, asciitilde, dead_grave, dead_tilde ] };
