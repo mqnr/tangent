@@ -41,7 +41,7 @@ xkb_symbols "kuntem_jq" {
     key <AC08> { [ a, A, aacute, Aacute ] };
     key <AC09> { [ i, I, iacute, Iacute ] };
     key <AC10> { [ e, E, eacute, Eacute ] };
-    key <AC11> { [ slash, question, questiondown, interrobang ] };
+    key <AC11> { [ semicolon, colon, paragraph, bullet ] };
 
     key <AB01> { [ z, Z, ae, AE ] };
     key <AB02> { [ x, X, multiply, division ] };
