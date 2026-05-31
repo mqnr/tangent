@@ -8,7 +8,7 @@
 
 -->
 <!--Last edited by Ukelele version 452 on 2025-10-29 at 14:07 (GMT-7)-->
-<keyboard group="126" id="-11291" name="Tangent Gallium" maxout="2">
+<keyboard group="126" id="-11292" name="Tangent Gallium" maxout="2">
     <layouts>
         <layout first="0" last="17" mapSet="16c" modifiers="f4"/>
         <layout first="18" last="18" mapSet="984" modifiers="f4"/>
