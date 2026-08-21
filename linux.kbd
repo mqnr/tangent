@@ -1,0 +1,45 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+          1    2    3    4    5    6    7    8    9    0    -    =
+          q    w    e    r    t    y    u    i    o    p    [
+  caps    a    s    d    f    g    h    j    k    l    ;    '
+          z    x    c    v    b    n    m    ,    .    /
+                              spc
+)
+
+(deflayer canaria
+          _    _    _    _    _    _    _    _    _    _    _    _
+          w    l    y    p    k    z    j    o    u    ;    _
+  @nav    c    r    s    t    b    f    n    e    i    a    '
+          x    v    d    g    q    m    h    /    ,    .
+                              _
+)
+
+(deflayer qwerty
+          _    _    _    _    _    _    _    _    _    _    _    _
+          _    _    _    _    _    _    _    _    _    _    _
+  @nav    _    _    _    _    _    _    _    _    _    _    _
+          _    _    _    _    _    _    _    _    _    _
+                              _
+)
+
+(deflayer navigation
+       f1         f2      f3       f4      f5       f6      f7      f8      f9      f10      f11      f12
+       @escaps    _       S-tab    tab     bck      brup    home    up      end     _        @lysw
+  _    @met       @alt    @sft     @ctl    ret      esc     lft     down    rght    bspc     del
+       C-z        C-x     C-c      C-v     fwd      brdn    pp      mute    vold    volu
+                                           M-spc
+)
+
+(defalias
+  nav (layer-while-held navigation)
+  escaps (fork esc caps (lsft rsft))
+  lysw (fork (layer-switch canaria) (layer-switch qwerty) (lsft rsft))
+  met (one-shot 60000 lmet)
+  alt (one-shot 60000 lalt)
+  sft (one-shot 60000 lsft)
+  ctl (one-shot 60000 lctl)
+)
